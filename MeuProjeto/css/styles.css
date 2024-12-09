@@ -1,0 +1,143 @@
+body {
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://images.pexels.com/photos/6985045/pexels-photo-6985045.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    z-index: -1;
+    filter: blur(8px);
+}
+
+
+header {
+    position: relative;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
+    padding: 40px;
+    z-index: 1;
+    text-align: center;
+}
+
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #4a4a4a;
+    text-transform: uppercase;
+}
+
+
+.navbar-brand {
+    font-weight: bold;
+    color: #5d5d5d !important;
+}
+
+.nav-link {
+    color: #5d5d5d !important;
+}
+
+.nav-link:hover {
+    color: #ff4081 !important;/
+}
+
+
+section {
+    position: relative;
+    overflow: hidden;
+    padding: 50px 0;
+}
+
+
+.servicos::before, .empoderamento-financeiro::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+
+.servicos {
+    background: linear-gradient(to right, rgba(255, 233, 173, 0.4), rgba(255, 182, 193, 0.4), rgba(207, 203, 255, 0.4));
+}
+
+.empoderamento-financeiro {
+    background: linear-gradient(to right, rgba(204, 240, 216, 0.4), rgba(179, 227, 245, 0.4), rgba(243, 212, 254, 0.4));
+}
+
+section h2 {
+    font-size: 2.5rem;
+    color: #4a4a4a;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+section p {
+    font-size: 1.2rem;
+    color: #5d5d5d;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #4a4a4a;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #5d5d5d;
+}
+
+
+footer {
+    position: relative;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    text-align: center;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+footer p {
+    margin-bottom: 0;
+    color: #4a4a4a;
+}
